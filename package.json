@@ -1,0 +1,27 @@
+{
+  "name": "buku-tamu-wedding-lofi",
+  "module": "src/index.ts",
+  "type": "module",
+  "scripts": {
+    "start": "node --loader ts-node/esm src/index.ts",
+    "build": "tsc",
+    "dev": "node --loader ts-node/esm src/index.ts"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "ts-node-dev": "^2.0.0"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "@types/express": "^4.17.21",
+    "@types/mongoose": "^5.11.97",
+    "@types/node": "^22.5.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.0",
+    "mongoose": "^8.6.2",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.6.2"
+  }
+}
