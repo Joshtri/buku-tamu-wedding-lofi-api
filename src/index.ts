@@ -1,7 +1,7 @@
 import express from 'express';
 import type { Request, Response } from 'express';
 
-import connectDB from './config/dbConfig.js';
+import connectDB from './config/dbConfig.ts';
 import guestRoute from './routes/guest.route.ts';
 
 const app = express();
