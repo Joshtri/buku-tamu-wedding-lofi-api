@@ -1,16 +1,16 @@
 {
   "compilerOptions": {
-    "target": "ESNext",
-    "module": "NodeNext",               // Use NodeNext for better ESM support
-    "moduleResolution": "NodeNext",     // NodeNext module resolution
-    "strict": true,
-    "esModuleInterop": true,
-    "skipLibCheck": true,
-    "forceConsistentCasingInFileNames": true,
-    "outDir": "./dist",
-    "rootDir": "./src",
-    "resolveJsonModule": true,
+    "target": "ESNext",                  // Target latest ECMAScript version
+    "module": "ESNext",                  // Use ESNext modules
+    "moduleResolution": "Node",          // Use Node module resolution
+    "strict": true,                      // Enable all strict type-checking options
+    "esModuleInterop": true,             // Enable interop between CommonJS and ES modules
+    "skipLibCheck": true,                // Skip type checking of declaration files
+    "forceConsistentCasingInFileNames": true, // Disallow inconsistently-cased references to the same file
+    "outDir": "./dist",                  // Output directory for compiled files
+    "rootDir": "./src",                  // Root directory of input files
+    "resolveJsonModule": true            // Allow importing .json files
   },
-  "include": ["src/**/*.ts"],
-  "exclude": ["node_modules", "dist"]
+  "include": ["src/**/*.ts"],            // Include all TypeScript files in src directory
+  "exclude": ["node_modules", "dist"]    // Exclude node_modules and dist directories
 }
