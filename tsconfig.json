@@ -1,18 +1,15 @@
 {
   "compilerOptions": {
     "target": "ESNext",
-    "module": "NodeNext",               // Use NodeNext for better ESM support
-    "moduleResolution": "NodeNext",     // NodeNext module resolution
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
     "strict": true,
     "esModuleInterop": true,
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
-    "outDir": "./dist",
-    "rootDir": "./src",
-    "resolveJsonModule": true,
-    "emitDeclarationOnly": false,
-    "noEmit": true,
-    "allowImportingTsExtensions":true
+    "outDir": "./dist",  // Output directory
+    "rootDir": "./src",  // Root directory
+    "resolveJsonModule": true
   },
   "include": ["src/**/*.ts"],
   "exclude": ["node_modules", "dist"]

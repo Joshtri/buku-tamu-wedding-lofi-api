@@ -2,7 +2,7 @@
 
 import { Router } from 'express';
 import type { Request, Response } from 'express';
-import Guest from '../models/guest.model.ts';
+import Guest from '../models/guest.model.js';
 
 const router = Router();
 
