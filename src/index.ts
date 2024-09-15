@@ -1,5 +1,6 @@
 import express from 'express';
 import type { Request, Response } from 'express';
+import cors from 'cors'
 
 import connectDB from './config/dbConfig.js';
 import guestRoute from './routes/guest.route.js';
@@ -12,8 +13,13 @@ connectDB();
 // Middleware to parse JSON
 app.use(express.json());
 
+app.use(cors({
+    origin: "*",
+    methods:["GET", "POST"],
+    credentials:true
+}));
 
-app.use('/',guestRoute)
+app.use('/api/guests',guestRoute)
 
 // Basic route to check server status
 app.get('/', (req: Request, res: Response) => {

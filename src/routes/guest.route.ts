@@ -21,4 +21,15 @@ router.post('/', async (req: Request, res: Response) => {
     }
 });
 
+// Route to get all guest entries
+router.get('/', async (req: Request, res: Response) => {
+    try {
+        const guests = await Guest.find(); // Fetch all guests
+        res.status(200).json(guests);
+    } catch (error) {
+        res.status(500).json({ error: 'Failed to retrieve guest entries' });
+    }
+});
+
+
 export default router;
