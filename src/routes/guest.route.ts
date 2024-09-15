@@ -11,6 +11,7 @@ router.post('/', async (req: Request, res: Response) => {
     try {
         const newGuest = new Guest({
             name: req.body.name,
+            jumlah_tamu: req.body.jumlah_tamu,
             message: req.body.message,
         });
         const savedGuest = await newGuest.save();
