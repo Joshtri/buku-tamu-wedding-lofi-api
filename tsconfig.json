@@ -1,8 +1,8 @@
 {
   "compilerOptions": {
     "target": "ESNext",
-    "module": "NodeNext",
-    "moduleResolution": "NodeNext",
+    "module": "NodeNext",               // Use NodeNext for better ESM support
+    "moduleResolution": "NodeNext",     // NodeNext module resolution
     "strict": true,
     "esModuleInterop": true,
     "skipLibCheck": true,
@@ -10,8 +10,6 @@
     "outDir": "./dist",
     "rootDir": "./src",
     "resolveJsonModule": true,
-    "noEmit": true,                     // Ensure noEmit is true
-    "allowImportingTsExtensions": true  // Allows importing TypeScript files directly
   },
   "include": ["src/**/*.ts"],
   "exclude": ["node_modules", "dist"]
